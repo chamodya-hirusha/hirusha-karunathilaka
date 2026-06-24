@@ -32,21 +32,21 @@ export const metadata: Metadata = {
     'Sri Lanka Developer',
     'Freelance Developer'
   ],
-  authors: [{ name: 'Chamodya Hirusha', url: 'https://hirusha.dev' }],
+  authors: [{ name: 'Chamodya Hirusha', url: 'https://hirushakarunathilaka.com' }],
   creator: 'Chamodya Hirusha',
   publisher: 'Chamodya Hirusha',
-  metadataBase: new URL('https://hirusha.dev'),
+  metadataBase: new URL('https://hirushakarunathilaka.com'),
   alternates: {
-    canonical: 'https://hirusha.dev',
+    canonical: 'https://hirushakarunathilaka.com',
   },
   openGraph: {
     title: 'Chamodya Hirusha - Full-Stack Developer ',
     description: 'Experienced Full-Stack Developer specializing in React, Node.js, React Native, and AI/ML technologies. Building scalable web and mobile applications.',
-    url: 'https://hirusha.dev',
+    url: 'https://hirushakarunathilaka.com',
     siteName: 'Chamodya Hirusha Portfolio',
     images: [
       {
-        url: '/profile_pic.jpg',
+        url: '/chamodya-hirusha.jpg',
         width: 800,
         height: 800,
         alt: 'Chamodya Hirusha - Full-Stack Developer Portfolio',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chamodya Hirusha - Full-Stack Developer ',
     description: 'Experienced Full-Stack Developer specializing in React, Node.js, React Native, and AI/ML technologies.',
-    images: ['/profile_pic.jpg'],
+    images: ['/chamodya-hirusha.jpg'],
     creator: '@hirusha_dev',
     site: '@hirusha_dev',
   },
@@ -93,12 +93,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/profile_pic.jpg?v=3', type: 'image/jpeg' },
-      { url: '/profile_pic.jpg?v=3', sizes: '16x16', type: 'image/jpeg' },
-      { url: '/profile_pic.jpg?v=3', sizes: '32x32', type: 'image/jpeg' },
+      { url: '/chamodya-hirusha.jpg?v=3', type: 'image/jpeg' },
+      { url: '/chamodya-hirusha.jpg?v=3', sizes: '16x16', type: 'image/jpeg' },
+      { url: '/chamodya-hirusha.jpg?v=3', sizes: '32x32', type: 'image/jpeg' },
     ],
     apple: [
-      { url: '/profile_pic.jpg?v=3', sizes: '180x180', type: 'image/jpeg' },
+      { url: '/chamodya-hirusha.jpg?v=3', sizes: '180x180', type: 'image/jpeg' },
     ],
   },
 }
@@ -114,10 +114,10 @@ export default function RootLayout({
         <StructuredData type="Person" />
         <StructuredData type="WebSite" />
         <StructuredData type="WebPage" />
-        <link rel="icon" href="/profile_pic.jpg?v=3" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/profile_pic.jpg?v=3" type="image/jpeg" />
-        <link rel="icon" type="image/jpeg" sizes="32x32" href="/profile_pic.jpg?v=3" />
-        <link rel="icon" type="image/jpeg" sizes="16x16" href="/profile_pic.jpg?v=3" />
+        <link rel="icon" href="/chamodya-hirusha.jpg?v=3" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/chamodya-hirusha.jpg?v=3" type="image/jpeg" />
+        <link rel="icon" type="image/jpeg" sizes="32x32" href="/chamodya-hirusha.jpg?v=3" />
+        <link rel="icon" type="image/jpeg" sizes="16x16" href="/chamodya-hirusha.jpg?v=3" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#000000" />
         <meta name="msapplication-TileColor" content="#000000" />

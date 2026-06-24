@@ -1,5 +1,5 @@
 # Robots.txt for Chamodya Hirusha Portfolio
-# https://hirusha.dev
+# https://hirushakarunathilaka.com
 
 # Allow all search engines to crawl the entire site
 User-agent: *
@@ -36,8 +36,8 @@ Disallow: /_next/
 Disallow: /dist/
 
 # Sitemap location
-Sitemap: https://hirusha.dev/sitemap.xml
+Sitemap: https://hirushakarunathilaka.com/sitemap.xml
 
 # Additional sitemaps (if you have them)
-Sitemap: https://hirusha.dev/sitemap-images.xml
-Sitemap: https://hirusha.dev/sitemap-videos.xml
+Sitemap: https://hirushakarunathilaka.com/sitemap-images.xml
+Sitemap: https://hirushakarunathilaka.com/sitemap-videos.xml

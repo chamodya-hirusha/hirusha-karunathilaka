@@ -14,7 +14,7 @@ interface SEOProps {
 export default function SEO({
   title = 'Chamodya Hirusha - Full-Stack Developer',
   description = 'Experienced Full-Stack Developer specializing in React, Node.js, React Native, and AI/ML technologies. Building scalable web and mobile applications with modern frameworks and cutting-edge solutions.',
-  canonical = 'https://hirusha.dev',
+  canonical = 'https://hirushakarunathilaka.com',
   ogImage = '/og-image.jpg',
   ogType = 'website',
   twitterCard = 'summary_large_image',

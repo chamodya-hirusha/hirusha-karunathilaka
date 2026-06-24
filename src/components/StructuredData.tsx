@@ -11,8 +11,8 @@ export default function StructuredData({ type = 'Person' }: StructuredDataProps)
     "name": "Chamodya Hirusha",
     "jobTitle": "Full-Stack Developer",
     "description": "Experienced Full-Stack Developer specializing in React, Node.js, React Native, and AI/ML technologies. Building scalable web and mobile applications with modern frameworks and cutting-edge solutions.",
-    "url": "https://hirusha.dev",
-    "image": "https://hirusha.dev/profile-image.jpg",
+    "url": "https://hirushakarunathilaka.com",
+    "image": "https://hirushakarunathilaka.com/profile-image.jpg",
     "sameAs": [
       "https://github.com/hirusha-dev",
       "https://linkedin.com/in/chamodya-hirusha",
@@ -54,8 +54,8 @@ export default function StructuredData({ type = 'Person' }: StructuredDataProps)
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Chamodya Hirusha Portfolio",
-    "url": "https://hirusha.dev",
-    "logo": "https://hirusha.dev/logo.png",
+    "url": "https://hirushakarunathilaka.com",
+    "logo": "https://hirushakarunathilaka.com/logo.png",
     "description": "Professional portfolio showcasing full-stack development projects and AI/ML solutions",
     "founder": {
       "@type": "Person",
@@ -71,7 +71,7 @@ export default function StructuredData({ type = 'Person' }: StructuredDataProps)
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Chamodya Hirusha Portfolio",
-    "url": "https://hirusha.dev",
+    "url": "https://hirushakarunathilaka.com",
     "description": "Professional portfolio of Chamodya Hirusha, Full-Stack Developer",
     "author": {
       "@type": "Person",
@@ -79,7 +79,7 @@ export default function StructuredData({ type = 'Person' }: StructuredDataProps)
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://hirusha.dev/search?q={search_term_string}",
+      "target": "https://hirushakarunathilaka.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
@@ -89,7 +89,7 @@ export default function StructuredData({ type = 'Person' }: StructuredDataProps)
     "@type": "WebPage",
     "name": "Chamodya Hirusha - Full-Stack Developer",
     "description": "Experienced Full-Stack Developer specializing in React, Node.js, React Native, and AI/ML technologies.",
-    "url": "https://hirusha.dev",
+    "url": "https://hirushakarunathilaka.com",
     "mainEntity": {
       "@type": "Person",
       "name": "Chamodya Hirusha"
@@ -101,7 +101,7 @@ export default function StructuredData({ type = 'Person' }: StructuredDataProps)
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://hirusha.dev"
+          "item": "https://hirushakarunathilaka.com"
         }
       ]
     }

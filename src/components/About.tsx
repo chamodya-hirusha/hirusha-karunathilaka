@@ -139,7 +139,7 @@ const About = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity" />
                   <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-border/50">
                     <img
-                      src="/profile_pic.jpg?v=2"
+                      src="/chamodya-hirusha.jpg?v=2"
                       alt="Hirusha profile"
                       className="h-full w-full object-cover"
                       onError={(e) => {

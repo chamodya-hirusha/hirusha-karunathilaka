@@ -13,28 +13,28 @@
   "categories": ["portfolio", "technology", "developer"],
   "icons": [
     {
-      "src": "/profile_pic.jpg",
+      "src": "/chamodya-hirusha.jpg",
       "sizes": "16x16",
       "type": "image/jpeg"
     },
     {
-      "src": "/profile_pic.jpg",
+      "src": "/chamodya-hirusha.jpg",
       "sizes": "32x32",
       "type": "image/jpeg"
     },
     {
-      "src": "/profile_pic.jpg",
+      "src": "/chamodya-hirusha.jpg",
       "sizes": "180x180",
       "type": "image/jpeg"
     },
     {
-      "src": "/profile_pic.jpg",
+      "src": "/chamodya-hirusha.jpg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
-      "src": "/profile_pic.jpg",
+      "src": "/chamodya-hirusha.jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any maskable"
@@ -64,7 +64,7 @@
       "url": "/about",
       "icons": [
         {
-          "src": "/profile_pic.jpg",
+          "src": "/chamodya-hirusha.jpg",
           "sizes": "32x32",
           "type": "image/jpeg"
         }
@@ -77,7 +77,7 @@
       "url": "/projects",
       "icons": [
         {
-          "src": "/profile_pic.jpg",
+          "src": "/chamodya-hirusha.jpg",
           "sizes": "32x32",
           "type": "image/jpeg"
         }
@@ -90,7 +90,7 @@
       "url": "/contact",
       "icons": [
         {
-          "src": "/profile_pic.jpg",
+          "src": "/chamodya-hirusha.jpg",
           "sizes": "32x32",
           "type": "image/jpeg"
         }

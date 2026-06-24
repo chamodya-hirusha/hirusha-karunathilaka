@@ -2,7 +2,7 @@ const CACHE_NAME = 'hirusha-portfolio-v1'
 const urlsToCache = [
   '/',
   '/static/css/app/layout.css',
-  '/profile_pic.jpg?v=3',
+  '/chamodya-hirusha.jpg?v=3',
   '/og-image.jpg',
   '/manifest.json'
 ]

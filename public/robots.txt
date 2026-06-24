@@ -1,0 +1,43 @@
+# Robots.txt for Chamodya Hirusha Portfolio
+# https://hirusha.dev
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Social media crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block access to admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dist/
+
+# Sitemap location
+Sitemap: https://hirusha.dev/sitemap.xml
+
+# Additional sitemaps (if you have them)
+Sitemap: https://hirusha.dev/sitemap-images.xml
+Sitemap: https://hirusha.dev/sitemap-videos.xml

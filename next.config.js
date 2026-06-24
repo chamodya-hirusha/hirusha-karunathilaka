@@ -101,6 +101,9 @@ const nextConfig = {
     
     return config
   },
+  
+  // Silence Turbopack warning
+  turbopack: {},
 }
 
 module.exports = nextConfig

@@ -22,10 +22,10 @@ export default function SEO({
   keywords = []
 }: SEOProps) {
   const siteName = 'Chamodya Hirusha Portfolio'
-  const twitterHandle = '@hirusha_dev'
-  
+  const twitterHandle = '@hirushakarunathilaka.com'
+
   const fullTitle = title.includes('Chamodya Hirusha') ? title : `${title} | Chamodya Hirusha`
-  
+
   return (
     <Head>
       {/* Basic Meta Tags */}
@@ -33,10 +33,10 @@ export default function SEO({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords.join(', ')} />
       <link rel="canonical" href={canonical} />
-      
+
       {/* Robots */}
       {noindex && <meta name="robots" content="noindex,nofollow" />}
-      
+
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
@@ -48,7 +48,7 @@ export default function SEO({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={fullTitle} />
-      
+
       {/* Twitter Card */}
       <meta name="twitter:card" content={twitterCard} />
       <meta name="twitter:title" content={fullTitle} />
@@ -56,7 +56,7 @@ export default function SEO({
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:site" content={twitterHandle} />
       <meta name="twitter:creator" content={twitterHandle} />
-      
+
       {/* Additional Meta Tags */}
       <meta name="author" content="Chamodya Hirusha" />
       <meta name="publisher" content="Chamodya Hirusha" />
@@ -67,27 +67,27 @@ export default function SEO({
       <meta name="distribution" content="global" />
       <meta name="geo.region" content="LK" />
       <meta name="geo.country" content="Sri Lanka" />
-      
+
       {/* Mobile Optimization */}
       <meta name="format-detection" content="telephone=no" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       <meta name="apple-mobile-web-app-title" content="Hirusha Portfolio" />
-      
+
       {/* Performance and Security */}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="referrer" content="origin-when-cross-origin" />
-      
+
       {/* Preconnect to external domains for performance */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link rel="preconnect" href="https://www.google-analytics.com" />
-      
+
       {/* DNS Prefetch for better performance */}
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />
       <link rel="dns-prefetch" href="//www.google-analytics.com" />
-      
+
       {/* Preload critical resources */}
       <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
     </Head>

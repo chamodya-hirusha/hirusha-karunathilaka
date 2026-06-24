@@ -62,8 +62,8 @@ export const metadata: Metadata = {
     title: 'Chamodya Hirusha - Full-Stack Developer ',
     description: 'Experienced Full-Stack Developer specializing in React, Node.js, React Native, and AI/ML technologies.',
     images: ['/chamodya-hirusha.jpg'],
-    creator: '@hirusha_dev',
-    site: '@hirusha_dev',
+    creator: '@hirushakarunathilaka.com',
+    site: '@hirushakarunathilaka.com',
   },
   robots: {
     index: true,

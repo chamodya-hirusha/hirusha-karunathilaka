@@ -49,13 +49,17 @@ const Projects = () => {
           if (Array.isArray(data) && data.length > 0) {
             setProjects(data);
           } else {
+            console.warn("API returned empty array or invalid data format.");
             setProjects([]);
           }
         } else {
+          // Read the error response from the server
+          const errorText = await res.text();
+          console.error(`API Error (${res.status}):`, errorText);
           setProjects([]);
         }
       } catch (err) {
-        console.error("Error fetching portfolio projects:", err);
+        console.error("Network or parsing error fetching portfolio projects:", err);
         setProjects([]);
       } finally {
         setLoading(false);

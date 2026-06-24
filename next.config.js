@@ -7,14 +7,18 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   
-  // Ignore ESLint errors during production builds to bypass tooling compatibility issues
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  
   // Image optimization
   images: {
-    domains: ['localhost'],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+      {
+        protocol: 'https',
+        hostname: 'localhost',
+      },
+    ],
     unoptimized: true,
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

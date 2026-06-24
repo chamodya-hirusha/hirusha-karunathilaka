@@ -35,9 +35,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Chamodya Hirusha', url: 'https://hirushakarunathilaka.com' }],
   creator: 'Chamodya Hirusha',
   publisher: 'Chamodya Hirusha',
-  metadataBase: new URL('https://hirushakarunathilaka.com'),
+  metadataBase: process.env.VERCEL_URL 
+    ? new URL(`https://${process.env.VERCEL_URL}`) 
+    : new URL('https://hirushakarunathilaka.com'),
   alternates: {
-    canonical: 'https://hirushakarunathilaka.com',
+    canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://hirushakarunathilaka.com',
   },
   openGraph: {
     title: 'Chamodya Hirusha - Full-Stack Developer ',

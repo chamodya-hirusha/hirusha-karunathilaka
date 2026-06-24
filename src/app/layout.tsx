@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     siteName: 'Chamodya Hirusha Portfolio',
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
+        url: '/profile_pic.jpg',
+        width: 800,
+        height: 800,
         alt: 'Chamodya Hirusha - Full-Stack Developer Portfolio',
         type: 'image/jpeg',
       },
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chamodya Hirusha - Full-Stack Developer ',
     description: 'Experienced Full-Stack Developer specializing in React, Node.js, React Native, and AI/ML technologies.',
-    images: ['/og-image.jpg'],
+    images: ['/profile_pic.jpg'],
     creator: '@hirusha_dev',
     site: '@hirusha_dev',
   },

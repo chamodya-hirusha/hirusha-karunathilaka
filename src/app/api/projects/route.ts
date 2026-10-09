@@ -107,6 +107,7 @@ export async function POST(request: NextRequest) {
       sort_order,
       is_featured,
       imageUrls,
+      category,
     } = body;
 
     // Validate required root inputs
@@ -133,6 +134,7 @@ export async function POST(request: NextRequest) {
       sort_order: typeof sort_order !== "undefined" ? Number(sort_order) || 0 : 0,
       is_featured: typeof is_featured === "boolean" ? is_featured : false,
       imageUrls: Array.isArray(imageUrls) ? imageUrls : [],
+      category: category || "",
       views: 0,
     });
 

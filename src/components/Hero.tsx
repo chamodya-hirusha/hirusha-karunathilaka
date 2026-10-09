@@ -46,7 +46,7 @@ const Hero = () => {
       link.download = "Chamodya_Hirusha_CV.pdf";
       link.rel = "noopener";
       link.target = "_blank";
-      link.href = "/chamodya hirusha.pdf";
+      link.href = "/chamodya_hirusha_se_cv.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

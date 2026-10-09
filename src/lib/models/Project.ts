@@ -20,6 +20,7 @@ export interface IProject extends Document {
   views: number;
   createdAt: Date;
   imageUrls?: string[];
+  category?: string;
 }
 
 const ProjectSchema: Schema = new Schema(
@@ -39,7 +40,8 @@ const ProjectSchema: Schema = new Schema(
     sort_key: String,
     sort_order: { type: Number, default: 0 },
     is_featured: { type: Boolean, default: false },
-    views: { type: Number, default: 0 }
+    views: { type: Number, default: 0 },
+    category: { type: String, default: "" }
   },
   {
     timestamps: true

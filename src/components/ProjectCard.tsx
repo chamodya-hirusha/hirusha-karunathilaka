@@ -32,6 +32,7 @@ export interface ProjectType {
   sort_order: number;
   is_featured: boolean;
   imageUrls?: string[];
+  category?: string;
 }
 
 interface ProjectCardProps {

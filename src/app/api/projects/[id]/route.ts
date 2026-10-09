@@ -33,6 +33,7 @@ export async function PUT(
       sort_order,
       is_featured,
       imageUrls,
+      category,
     } = body;
 
     if (!title || !short_description) {
@@ -60,6 +61,7 @@ export async function PUT(
         sort_order: typeof sort_order !== "undefined" ? Number(sort_order) || 0 : 0,
         is_featured: typeof is_featured === "boolean" ? is_featured : false,
         imageUrls: Array.isArray(imageUrls) ? imageUrls : [],
+        category: category || "",
       },
       { new: true, runValidators: true }
     );

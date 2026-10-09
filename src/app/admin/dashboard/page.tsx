@@ -65,6 +65,7 @@ interface ProjectData {
   views: number;
   createdAt: string;
   imageUrls?: string[];
+  category?: string;
 }
 
 export default function AdminDashboard() {
@@ -100,6 +101,7 @@ export default function AdminDashboard() {
     sort_order: "0",
     is_featured: false,
     imageUrls: [] as string[],
+    category: "",
   });
 
   // Profile & Socials states
@@ -218,6 +220,7 @@ export default function AdminDashboard() {
       sort_order: "0",
       is_featured: false,
       imageUrls: [],
+      category: "",
     });
     setModalOpen(true);
   };
@@ -239,6 +242,7 @@ export default function AdminDashboard() {
       sort_order: String(project.sort_order || 0),
       is_featured: !!project.is_featured,
       imageUrls: Array.isArray(project.imageUrls) ? project.imageUrls : [],
+      category: project.category || "",
     });
     setModalOpen(true);
   };
@@ -262,6 +266,7 @@ export default function AdminDashboard() {
       sort_order: String(project.sort_order || 0),
       is_featured: !!project.is_featured,
       imageUrls: Array.isArray(project.imageUrls) ? project.imageUrls : [],
+      category: project.category || "",
     });
     setModalOpen(true);
     toast.info("Project details copied. Modify and save to create a duplicate.");
@@ -303,6 +308,7 @@ export default function AdminDashboard() {
         sort_order: typeof data.sort_order !== "undefined" ? String(data.sort_order) : "0",
         is_featured: typeof data.is_featured === "boolean" ? data.is_featured : false,
         imageUrls: Array.isArray(data.imageUrls) ? data.imageUrls : [],
+        category: data.category || "",
       });
 
       setShowPasteArea(false);
@@ -444,6 +450,7 @@ export default function AdminDashboard() {
       sort_order: Number(formData.sort_order) || 0,
       is_featured: formData.is_featured,
       imageUrls: formData.imageUrls,
+      category: formData.category,
     };
 
     try {
@@ -1329,7 +1336,7 @@ export default function AdminDashboard() {
 
               <div className="space-y-2">
                 <Label htmlFor="sort_key" className="text-[10px] uppercase tracking-widest font-semibold text-neutral-400">
-                  Sort Key (Category)
+                  Sort Key (Legacy)
                 </Label>
                 <select
                   id="sort_key"
@@ -1342,6 +1349,27 @@ export default function AdminDashboard() {
                   <option value="mobile">mobile</option>
                   <option value="design">design</option>
                   <option value="other">other</option>
+                </select>
+              </div>
+
+              {/* Category (Filter Tag) */}
+              <div className="space-y-2">
+                <Label htmlFor="category" className="text-[10px] uppercase tracking-widest font-semibold text-neutral-400">
+                  Category (Filter Tag)
+                </Label>
+                <select
+                  id="category"
+                  name="category"
+                  value={formData.category}
+                  onChange={handleInputChange}
+                  className="flex h-10 w-full rounded-md border border-neutral-800/60 bg-[#111318] text-neutral-100 px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-500/20 focus-visible:border-cyan-500 transition-all duration-200"
+                >
+                  <option value="">— Select Category —</option>
+                  <option value="Web Site">Web Site</option>
+                  <option value="Mobile App">Mobile App</option>
+                  <option value="Demo Project">Demo Project</option>
+                  <option value="POS System">POS System</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
             </div>
